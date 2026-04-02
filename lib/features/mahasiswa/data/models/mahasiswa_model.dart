@@ -1,4 +1,4 @@
-API: https://jsonplaceholder.typicode.com/comments
+//API: https://jsonplaceholder.typicode.com/comments
 class MahasiswaModel {
   final int id;
   final int postId;
@@ -22,15 +22,5 @@ class MahasiswaModel {
       email: json['email'] ?? '',
       body: json['body'] ?? '',
     );
-  }
-
-  Map<String, dynamic> toJson() {
-    return {
-      'id': id,
-      'postId': postId,
-      'name': name,
-      'email': email,
-      'body': body,
-    };
   }
 }
